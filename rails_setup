@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Install NodeJS as a JavaScript runtime so that Rails can run faster
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
+sudo apt-get install nodejs
+
+gem install rails
+rbenv rehash
+rails_ver=$(rails -v)
+echo '$rails_ver has been installed'
