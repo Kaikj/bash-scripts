@@ -1,0 +1,56 @@
+#!/bin/bash
+# Setting up Ubuntu
+# The first parameter would be the user's username on git
+# The second parameter is the user's email
+
+username=$1
+email=$2
+cd ~
+
+# Update
+sudo apt-get update
+echo 'Update successful'
+
+# Set external environment file
+echo 'if [ -f ~/.bash_env ]; then' >> ~/.bashrc
+echo '    . ~/.bash_env' >> ~/.bashrc
+echo 'fi' >> ~/.bashrc
+touch ~/.bash_env
+
+# Get vim
+sudo apt-get install vim
+
+if [ -f ~/.vimrc ]
+then
+	echo '" For cool stuff' >> ~/.vimrc
+	echo 'set nocompatible' >> ~/.vimrc
+	echo 'set number'  >> ~/.vimrc
+	echo 'set mouse=a' >> ~/.vimrc
+else
+	touch ~/.vimrc	
+	echo '" For cool stuff' >> ~/.vimrc
+	echo 'set nocompatible' >> ~/.vimrc
+	echo 'set number'  >> ~/.vimrc
+	echo 'set mouse=a' >> ~/.vimrc
+fi
+	
+# Configure git
+sudo apt-get install git-core
+git config --global color.ui true
+git config --global user.name $username
+git config --global user.email $email
+
+# Set user defined bin folder
+mkdir ~/bin
+echo 'export PATH="~/bin:$PATH"' >> ~/.bash_env
+
+# Key generation
+ssh-keygen -t rsa -C $email
+echo 'Please paste the following at this link: https://github.com/settings/ssh'
+cat ~/.ssh/id_rsa.pub
+echo -e '\n'
+echo 'Please run ssh -T git@github.com after you have done that'
+echo 'You should get a message like this:'
+echo 'Hi $username! You\'ve successfully authenticated, but GitHub does not provide shell access.'
+
+echo '. ~/.bashrc'
