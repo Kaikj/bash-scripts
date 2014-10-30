@@ -15,17 +15,23 @@ If `git` is not installed yet, download the zipfile from the sidebar.
 
 If it is, just run:
 
-  `git clone git@github.com:Kaikj/bash-scripts.git ~/bin`
+```bash
+  git clone git@github.com:Kaikj/bash-scripts.git ~/bin
+```
   
 After cloning the scripts, you can proceed to cd into the directory to execute any of the scripts:
 
-  `cd ~/bin`
-  
+```bash
+  cd ~/bin
+```
+
 ### Setup
 
 The setup script requires 2 parameters, email and git username. So run the command as such:
 
-  `. setup <email> <git username>`
+```bash
+  . setup <email> <git username>
+```
 
 ## Disclaimer
 These scripts are not bug free and are fragile as I do not have the time now to test it out properly. Please use with caution.
