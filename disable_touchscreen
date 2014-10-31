@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "id=\$(xinput --list | awk -v search=\"Touchscreen\" \\" >> ~/.bashrc
+echo   "'\$0 ~ search {match(\$0, /id=[0-9]+/);\\" >> ~/.bashrc
+echo                  "if (RSTART) \\" >> ~/.bashrc
+echo                    "print substr(\$0, RSTART+3, RLENGTH-3)\\" >> ~/.bashrc
+echo                 "}'\\" >> ~/.bashrc
+echo     ")" >> ~/.bashrc
+
+echo -e "\n"
+
+echo "xinput disable \$id" >> ~/.bashrc
+. ~/.bashrc
