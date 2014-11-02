@@ -1,0 +1,10 @@
+#!/bin/bash
+
+mkdir ~/src/php
+cd ~/src/php
+
+git clone https://github.com/phacility/libphutil.git
+git clone https://github.com/phacility/arcanist.git
+
+echo 'export PATH="~/src/php/arcanist/bin:$PATH"' >> ~/.bash_env
+. ~/.bashrc
