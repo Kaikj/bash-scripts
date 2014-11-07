@@ -25,6 +25,8 @@ After cloning the scripts, you can proceed to cd into the directory to execute a
   cd ~/bin
 ```
 
+Alternatively, you can add the path into the global variable path and be able to run the scripts from anywhere
+
 ### Setup
 
 The setup script requires 2 parameters, email and git username. So run the command as such:
