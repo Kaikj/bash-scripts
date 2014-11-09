@@ -1,0 +1,7 @@
+export PATH="~/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+export PATH="/opt/IntelliJ/idea-IU-135.1289/bin:$PATH"
+export EDITOR="atom"
+export PATH="~/src/php/arcanist/bin:$PATH"
