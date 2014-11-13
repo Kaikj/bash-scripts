@@ -15,7 +15,7 @@ echo 'Update successful'
 echo 'if [ -f ~/.bash_env ]; then' >> ~/.bashrc
 echo '    . ~/.bash_env' >> ~/.bashrc
 echo 'fi' >> ~/.bashrc
-touch ~/.bash_env
+touch ~/bin/.bash_env
 
 # Get vim
 sudo apt-get install vim
@@ -42,7 +42,7 @@ git config --global user.email $email
 
 # Set user defined bin folder
 mkdir ~/bin
-echo 'export PATH="~/bin:$PATH"' >> ~/.bash_env
+echo 'export PATH="~/bin:$PATH"' >> ~/bin/.bash_env
 
 # Key generation
 ssh-keygen -t rsa -C $email

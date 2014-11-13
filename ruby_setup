@@ -5,13 +5,13 @@ sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libread
 
 # Get rbenv
 git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_env
-echo 'eval "$(rbenv init -)"' >> ~/.bash_env
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/bin/.bash_env
+echo 'eval "$(rbenv init -)"' >> ~/bin/.bash_env
 . ~/.bashrc
 
 # Get ruby-build in rbenv
 git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bash_env
+echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/bin/.bash_env
 . ~/.bashrc
 
 # Install Ruby 2.1.2
