@@ -1,0 +1,4 @@
+#!/bin/bash
+
+bundle exec cap staging deploy
+bundle exec cap production deploy
