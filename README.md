@@ -5,7 +5,7 @@ bash-scripts
 
 A personal collection of useful bash scripts.
 
-These scripts are written to automate any repetitive tasks that I may have as well as document the steps needed to set up any common dev environments that I may use. They are customized to my personal settings and the only reason they are on github is for portability.
+These scripts are written to automate any repetitive tasks that I may have as well as document the steps needed to set up any common dev environments that I may use. They are customized to my personal settings and the only reason they are on github is for portability across my own machines.
 
 ## Usage
 
