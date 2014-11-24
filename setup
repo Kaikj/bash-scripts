@@ -20,20 +20,18 @@ touch ~/bin/.bash_env
 # Get vim
 sudo apt-get install vim
 
+# Find a way to negate this
 if [ -f ~/.vimrc ]
 then
-	echo '" For cool stuff' >> ~/.vimrc
-	echo 'set nocompatible' >> ~/.vimrc
-	echo 'set number'  >> ~/.vimrc
-	echo 'set mouse=a' >> ~/.vimrc
 else
 	touch ~/.vimrc	
-	echo '" For cool stuff' >> ~/.vimrc
-	echo 'set nocompatible' >> ~/.vimrc
-	echo 'set number'  >> ~/.vimrc
-	echo 'set mouse=a' >> ~/.vimrc
 fi
 	
+echo '" For cool stuff' >> ~/.vimrc
+echo 'set nocompatible' >> ~/.vimrc
+echo 'set number'  >> ~/.vimrc
+echo 'set mouse=a' >> ~/.vimrc
+
 # Configure git
 sudo apt-get install git-core
 git config --global color.ui true
