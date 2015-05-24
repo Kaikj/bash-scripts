@@ -18,7 +18,7 @@ FILES=$(ls $DOTDIR)		# Get list of files in dotfile directory
 ##############
 
 # Create old dotfiles directory in home directory
-if [ -d "$OLDDIR" ]; then
+if [ ! -d "$OLDDIR" ]; then
 	echo -n "Creating $OLDDIR for backup of any existing dotfiles in ~ ..."
 	mkdir $OLDDIR
 	echo "done"
