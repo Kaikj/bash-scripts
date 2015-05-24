@@ -10,10 +10,10 @@
 # Variables
 ##############
 
-DIR=$(pwd)				# Current directory
-DOTDIR=$DIR/dotfiles	# Dotfiles directory
-OLDDIR=~/dotfiles_old	# Old dotfiles backup directory
-FILES=$(ls $DOTDIR)		# Get list of files in dotfile directory
+DIR=$( dirname "${BASH_SOURCE[0]}" )	# Current directory
+DOTDIR=$DIR/dotfiles					# Dotfiles directory
+OLDDIR=~/dotfiles_old					# Old dotfiles backup directory
+FILES=$(ls $DOTDIR)						# Get list of files in dotfile directory
 
 ##############
 
