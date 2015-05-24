@@ -1,0 +1,55 @@
+" For cool stuffs
+
+set nocompatible	" Workaround for keyboard incompatibility (Set first)
+
+" Pathogen {{{
+execute pathogen#infect()
+" }}}
+
+" Encoding {{{
+scriptencoding utf-8
+set encoding=utf-8
+" }}}
+
+" Colours {{{
+syntax enable		" Enable syntax processing
+set t_Co=256
+" }}}
+
+" Spaces and Tabs {{{
+"set tabstop=4			" Number of visual spaces per TAB
+"set softtabstop=4		" Number of spaces in tab when editing
+set listchars:tab:»·,trail:·	" Configuration for tab and trailing
+set list			" Show hidden chars
+set autoindent			" Auto-indent
+" }}}
+
+" UI Layout {{{
+set number		" Set numberings at side
+set cursorline		" Highlight current line
+set showmatch		" Highlight matching [{()}]
+" }}}
+
+" Searching  {{{
+set incsearch		" search as characters are entered
+set hlsearch		" highlight matches
+" }}}
+
+" Folding {{{
+
+" }}}
+
+" Airline settings {{{
+set laststatus=2
+set timeoutlen=50
+let g:airline_theme = 'powerlineish'
+let g:airline_powerline_fonts = 1
+" }}}
+
+" Vimux settings {{{
+map <leader>t yy<CR>
+" }}}
+
+let mapleader = ","
+set showcmd
+set mouse=a		" Enable use of mouse
