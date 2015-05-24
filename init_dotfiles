@@ -24,9 +24,15 @@ if [ ! -d "$OLDDIR" ]; then
 	echo "done"
 fi
 
-for file in $files; do
-	echo -n "Moving any existing dotfiles from ~ to $OLDDIR"
-	mv ~/.$file $OLDDIR
-	echo -n "Creating symlink to $file in home directory"
+for file in $FILES; do
+	echo ""
+	echo -n "Finding any existing dotfiles in home directory ..."
+	if [ -f ~/.$file ]; then
+		echo "Found"
+		echo "Moving $file from ~ to $OLDDIR"
+		mv ~/.$file $OLDDIR
+	fi
+
+	echo "Creating symlink to $file in home directory"
 	ln -s $DOTDIR/$file ~/.$file
 done
