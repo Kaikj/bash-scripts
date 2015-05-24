@@ -1,0 +1,32 @@
+#!/bin/bash
+#############################################
+# install
+# This script installs dotfiles found in
+# the dotfile directory by creating symlinks
+# from the home directory
+#############################################
+
+##############
+# Variables
+##############
+
+DIR=$(pwd)				# Current directory
+DOTDIR=$DIR/dotfiles	# Dotfiles directory
+OLDDIR=~/dotfiles_old	# Old dotfiles backup directory
+FILES=$(ls $DOTDIR)		# Get list of files in dotfile directory
+
+##############
+
+# Create old dotfiles directory in home directory
+if [ -d "$OLDDIR" ]; then
+	echo -n "Creating $OLDDIR for backup of any existing dotfiles in ~ ..."
+	mkdir $OLDDIR
+	echo "done"
+fi
+
+for file in $files; do
+	echo -n "Moving any existing dotfiles from ~ to $OLDDIR"
+	mv ~/.$file $OLDDIR
+	echo -n "Creating symlink to $file in home directory"
+	ln -s $DOTDIR/$file ~/.$file
+done
