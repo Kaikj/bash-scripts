@@ -10,7 +10,8 @@
 # Variables
 ##############
 
-DIR=$( dirname "${BASH_SOURCE[0]}" )	# Current directory
+# Get directory of the script
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 DOTDIR=$DIR/dotfiles					# Dotfiles directory
 OLDDIR=~/dotfiles_old					# Old dotfiles backup directory
 FILES=$(ls $DOTDIR)						# Get list of files in dotfile directory
