@@ -10,3 +10,6 @@ alias wifi_restart='function _wifi_restart() {
 	exit;
 };_wifi_restart'
 alias task='gnome-system-monitor &'
+alias search='function _search() {
+	grep -e $1 -R ./
+};_search'
