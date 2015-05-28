@@ -32,6 +32,19 @@ set cursorline		" Highlight current line
 set showmatch		" Highlight matching [{()}]
 " }}}
 
+" Split Screen {{{
+" window
+nmap <leader>w<left>  :topleft  vnew<CR>
+nmap <leader>w<right> :botright vnew<CR>
+nmap <leader>w<up>    :topleft  new<CR>
+nmap <leader>w<down>  :botright new<CR>
+" buffer
+nmap <leader>b<left>   :leftabove  vnew<CR>
+nmap <leader>b<right>  :rightbelow vnew<CR>
+nmap <leader>b<up>     :leftabove  new<CR>
+nmap <leader>b<down>   :rightbelow new<CR>
+"}}}
+
 " Searching  {{{
 set incsearch		" search as characters are entered
 set hlsearch		" highlight matches
