@@ -48,6 +48,8 @@ nmap <leader>b<down>   :rightbelow new<CR>
 " Searching  {{{
 set incsearch		" search as characters are entered
 set hlsearch		" highlight matches
+" Switch off highlighting of the current search results
+nnoremap <CR> :nohlsearch<CR><CR>
 " }}}
 
 " Folding {{{
