@@ -13,3 +13,6 @@
 [submodule "dotfiles/vim/bundle/vim-snipmate"]
 	path = dotfiles/vim/bundle/vim-snipmate
 	url = https://github.com/garbas/vim-snipmate.git
+[submodule "dotfiles/vim/bundle/vim-snippets"]
+	path = dotfiles/vim/bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
