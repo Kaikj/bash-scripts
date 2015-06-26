@@ -7,3 +7,6 @@
 [submodule "dotfiles/vim/bundle/vim-addon-mw-utils"]
 	path = dotfiles/vim/bundle/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "dotfiles/vim/bundle/vim-autoclose"]
+	path = dotfiles/vim/bundle/vim-autoclose
+	url = https://github.com/Townk/vim-autoclose.git
