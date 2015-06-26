@@ -10,3 +10,6 @@
 [submodule "dotfiles/vim/bundle/vim-autoclose"]
 	path = dotfiles/vim/bundle/vim-autoclose
 	url = https://github.com/Townk/vim-autoclose.git
+[submodule "dotfiles/vim/bundle/vim-snipmate"]
+	path = dotfiles/vim/bundle/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate.git
