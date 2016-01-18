@@ -13,3 +13,7 @@ alias task='gnome-system-monitor &'
 alias search='function _search() {
 	grep $1 -R ./
 };_search'
+alias mouse='function _mouse() {
+	sudo rmmod psmouse;
+	sudo insmod /lib/modules/4.1.6-040106-generic/kernel/drivers/input/mouse/psmouse.ko;
+};_mouse'
