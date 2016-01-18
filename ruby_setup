@@ -21,5 +21,5 @@ ruby_ver=$(ruby -v)
 echo 'Using Ruby version $ruby_ver'
 
 # Do not install the documentation of each gem locally
-echo "gem: --no-ri --no-rdoc" > ~/.gemrc
+echo "gem: --no-ri --no-rdoc" >> ~/.gemrc
 
