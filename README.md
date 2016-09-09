@@ -32,7 +32,7 @@ Alternatively, you can add the path into the global variable path and be able to
 The setup script requires 2 parameters, email and git username. So run the command as such:
 
 ```bash
-  . setup <email> <git username>
+  . setup <git username> <email>
 ```
 
 ## Disclaimer
