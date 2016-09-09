@@ -41,7 +41,10 @@ mkdir ~/bin
 echo 'export PATH="~/bin:$PATH"' >> ~/bin/.bash_env
 
 # Key generation
-ssh-keygen -t rsa -C $email
+if [ ! -d ~/.ssh ]
+then
+	ssh-keygen -t rsa -C $email
+fi
 echo 'Please paste the following at this link: https://github.com/settings/ssh'
 cat ~/.ssh/id_rsa.pub
 echo -e '\n'
