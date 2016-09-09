@@ -20,10 +20,8 @@ touch ~/bin/.bash_env
 # Get vim
 sudo apt-get install vim
 
-# Find a way to negate this
-if [ -f ~/.vimrc ]
+if [ ! -f ~/.vimrc ]
 then
-else
 	touch ~/.vimrc	
 fi
 	
