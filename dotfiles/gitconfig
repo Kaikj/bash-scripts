@@ -1,7 +1,7 @@
 [color]
 	ui = true
 [user]
-	name = Kaikj
+	name = kaikj
 	email = bluesword246@gmail.com
 [core]
 	#editor = atom --wait
