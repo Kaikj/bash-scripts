@@ -19,3 +19,6 @@
 [submodule "dotfiles/vim/bundle/vim-latex-live-preview"]
 	path = dotfiles/vim/bundle/vim-latex-live-preview
 	url = git@github.com:xuhdev/vim-latex-live-preview.git
+[submodule "dotfiles/vim/bundle/fonts"]
+	path = dotfiles/vim/bundle/fonts
+	url = https://github.com/powerline/fonts.git
