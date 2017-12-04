@@ -23,14 +23,13 @@ Otherwise, run:
 
 ```bash
   git clone git@github.com:Kaikj/bash-scripts.git ~/bin
-  cd ~/bin
-  git submodule update --init --recursive
 ```
   
-After cloning the scripts, you can proceed into the directory to execute any of the scripts:
+After cloning the repositories, you can proceed into the directory to pull all submodules and execute any of the scripts:
 
 ```bash
   cd ~/bin
+  git submodule update --init --recursive
 ```
 
 Alternatively, you can add the path into the global variable path and be able to run the scripts from anywhere
