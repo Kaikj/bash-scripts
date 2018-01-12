@@ -22,3 +22,9 @@
 [submodule "dotfiles/vim/bundle/fonts"]
 	path = dotfiles/vim/bundle/fonts
 	url = https://github.com/powerline/fonts.git
+[submodule "dotfiles/vim/bundle/vim-airline-themes"]
+	path = dotfiles/vim/bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "dotfiles/vim/bundle/vim-fugitive"]
+	path = dotfiles/vim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
