@@ -61,7 +61,7 @@ nnoremap <CR> :nohlsearch<CR><CR>
 " Airline settings {{{
 set laststatus=2
 set timeoutlen=50
-let g:airline_theme = 'powerlineish'
+let g:airline_theme = 'minimalist'
 let g:airline_powerline_fonts = 1
 " }}}
 
