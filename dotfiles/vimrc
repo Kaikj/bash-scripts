@@ -36,9 +36,9 @@ set showmatch		" Highlight matching [{()}]
 
 " Split Screen {{{
 " window
-nmap <silent> <A-Left>  :wincmd  h<CR>
+nmap <silent> <A-Left>  :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
-nmap <silent> <A-Up>    :wincmd  k<CR>
+nmap <silent> <A-Up>    :wincmd k<CR>
 nmap <leader> <A-Down>  :wincmd j<CR>
 " buffer
 nmap <leader>b<left>   :leftabove  vnew<CR>
