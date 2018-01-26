@@ -28,3 +28,6 @@
 [submodule "dotfiles/vim/bundle/vim-fugitive"]
 	path = dotfiles/vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "plugin/fzf"]
+	path = plugin/fzf
+	url = https://github.com/junegunn/fzf.git
