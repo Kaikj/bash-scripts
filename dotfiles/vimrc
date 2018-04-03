@@ -40,7 +40,7 @@ set showmatch		" Highlight matching [{()}]
 nmap <silent> <A-Left>  :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
 nmap <silent> <A-Up>    :wincmd k<CR>
-nmap <leader> <A-Down>  :wincmd j<CR>
+nmap <silent> <A-Down>  :wincmd j<CR>
 " buffer
 nmap <leader>b<left>   :leftabove  vnew<CR>
 nmap <leader>b<right>  :rightbelow vnew<CR>
