@@ -24,11 +24,6 @@ if [ ! -f ~/.vimrc ]
 then
 	touch ~/.vimrc	
 fi
-	
-echo '" For cool stuff' >> ~/.vimrc
-echo 'set nocompatible' >> ~/.vimrc
-echo 'set number'  >> ~/.vimrc
-echo 'set mouse=a' >> ~/.vimrc
 
 # Configure git
 sudo apt-get install git-core
