@@ -42,10 +42,10 @@ nmap <silent> <A-Right> :wincmd l<CR>
 nmap <silent> <A-Up>    :wincmd k<CR>
 nmap <silent> <A-Down>  :wincmd j<CR>
 " buffer
-nmap <leader>b<left>   :leftabove  vnew<CR>
-nmap <leader>b<right>  :rightbelow vnew<CR>
-nmap <leader>b<up>     :leftabove  new<CR>
-nmap <leader>b<down>   :rightbelow new<CR>
+nmap <leader>h   :leftabove  vnew<CR>
+nmap <leader>l   :rightbelow vnew<CR>
+nmap <leader>k   :leftabove  new<CR>
+nmap <leader>j   :rightbelow new<CR>
 "}}}
 
 " Searching  {{{
