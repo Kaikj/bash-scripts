@@ -3,6 +3,7 @@
 set nocompatible	" Workaround for keyboard incompatibility (Set first)
 let mapleader = ","
 set showcmd
+set mouse=a			" Enable use of mouse
 
 " Pathogen {{{
 execute pathogen#infect()
@@ -69,4 +70,3 @@ let g:airline_powerline_fonts = 1
 map <leader>t yy<CR>
 " }}}
 
-set mouse=a		" Enable use of mouse
