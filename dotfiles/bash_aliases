@@ -9,7 +9,9 @@ alias wifi_restart='function _wifi_restart() {
 	sudo service network-manager restart;
 	exit;
 };_wifi_restart'
-alias task='gnome-system-monitor &'
+
+alias task-manager='gnome-system-monitor &'
+
 alias search='function _search() {
 	grep $1 -R ./
 };_search'
