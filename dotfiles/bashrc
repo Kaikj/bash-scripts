@@ -115,14 +115,18 @@ fi
 if [ -f ~/.bash_env ]; then
     . ~/.bash_env
 fi
+
+# FIXME: Remove this if not needed
 id=$(xinput --list | awk -v search="Touchscreen" \
 '$0 ~ search {match($0, /id=[0-9]+/);\
 if (RSTART) \
 print substr($0, RSTART+3, RLENGTH-3)\
 }'\
 )
-xinput disable $id
-xinput set-prop "ETPS/2 Elantech Touchpad" "Synaptics Finger" 5 5 255
+
+# FIXME: Old configuration for mouse. Find a better way to do this.
+#xinput disable $id
+#xinput set-prop "ETPS/2 Elantech Touchpad" "Synaptics Finger" 5 5 255
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
