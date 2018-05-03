@@ -1,9 +1,12 @@
 " For cool stuffs
 
 set nocompatible	" Workaround for keyboard incompatibility (Set first)
-let mapleader = ","
 set showcmd
 set mouse=a			" Enable use of mouse
+
+" Leader {{{
+let mapleader = ","
+" }}}
 
 " Pathogen {{{
 execute pathogen#infect()
