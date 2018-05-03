@@ -40,15 +40,15 @@ set showmatch		" Highlight matching [{()}]
 
 " Split Screen {{{
 " window
-nmap <silent> <A-Left>  :wincmd h<CR>
-nmap <silent> <A-Right> :wincmd l<CR>
-nmap <silent> <A-Up>    :wincmd k<CR>
-nmap <silent> <A-Down>  :wincmd j<CR>
+nnoremap <silent> <A-Left>  :wincmd h<CR>
+nnoremap <silent> <A-Right> :wincmd l<CR>
+nnoremap <silent> <A-Up>    :wincmd k<CR>
+nnoremap <silent> <A-Down>  :wincmd j<CR>
 " buffer
-nmap <leader>h   :leftabove  vnew<CR>
-nmap <leader>l   :rightbelow vnew<CR>
-nmap <leader>k   :leftabove  new<CR>
-nmap <leader>j   :rightbelow new<CR>
+nnoremap <leader>h   :leftabove  vnew<CR>
+nnoremap <leader>l   :rightbelow vnew<CR>
+nnoremap <leader>k   :leftabove  new<CR>
+nnoremap <leader>j   :rightbelow new<CR>
 "}}}
 
 " Searching  {{{
