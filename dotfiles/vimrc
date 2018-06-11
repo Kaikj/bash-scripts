@@ -24,18 +24,18 @@ set t_Co=256
 " }}}
 
 " Spaces and Tabs {{{
-set tabstop=4			" Number of visual spaces per TAB
-set softtabstop=4		" Number of spaces in tab when editing
+set tabstop=4					" Number of visual spaces per TAB
+set softtabstop=4				" Number of spaces in tab when editing
 set listchars:tab:»·,trail:·	" Configuration for tab and trailing
-set list			" Show hidden chars
-set autoindent			" Auto-indent
+set list						" Show hidden chars
+set autoindent					" Auto-indent
 autocmd Filetype ocaml setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd Filetype c setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 autocmd Filetype ruby setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 " }}}
 
 " UI Layout {{{
-set number		" Set numberings at side
+set number			" Set numberings at side
 set cursorline		" Highlight current line
 set showmatch		" Highlight matching [{()}]
 " }}}
