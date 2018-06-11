@@ -6,6 +6,7 @@ set mouse=a			" Enable use of mouse
 
 " Leader {{{
 let mapleader = ","
+set timeoutlen=500
 " }}}
 
 " Pathogen {{{
