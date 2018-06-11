@@ -135,3 +135,5 @@ export NVM_DIR="/home/kai/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 . /home/kai/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+
+eval $(thefuck --alias)
