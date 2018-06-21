@@ -31,3 +31,6 @@
 [submodule "plugin/fzf"]
 	path = plugin/fzf
 	url = https://github.com/junegunn/fzf.git
+[submodule "dotfiles/vim/bundle/vim-solidity"]
+	path = dotfiles/vim/bundle/vim-solidity
+	url = https://github.com/tomlion/vim-solidity.git
