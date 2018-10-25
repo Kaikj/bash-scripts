@@ -88,3 +88,14 @@ inoremap K <Esc>:m .-2<CR>==gi
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 " }}}
+
+" netrw Config {{{
+let g:netrw_liststyle=3
+
+" Lifted off from http://blog.g14n.info/2013/07/my-vim-configuration.html
+" when navigating a folder, hitting <v> opens a window at right side (default
+" is left side)
+"
+" Thank you!
+let g:netrw_altv = 1
+" }}}
