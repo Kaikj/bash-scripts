@@ -37,7 +37,7 @@ autocmd Filetype ruby setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 " UI Layout {{{
 set number			" Set numberings at side
 set relativenumber	" Set relative numbers
-augroup numbertoggle
+augroup relativenumbertoggle
   autocmd!
   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
