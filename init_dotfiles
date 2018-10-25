@@ -14,7 +14,7 @@
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 DOTDIR=$DIR/dotfiles					# Dotfiles directory
 OLDDIR=~/dotfiles_old					# Old dotfiles backup directory
-FILES=$(ls $DOTDIR)					# Get list of files in dotfile directory
+FILES=$DOTDIR/*							# Get list of files in dotfile directory
 
 ##############
 
@@ -27,19 +27,21 @@ if [ ! -d "$OLDDIR" ]; then
 fi
 
 for file in $FILES; do
+	filename=$(basename $file)
+
 	# Move old files to old directory
 	echo -n "Finding any existing dotfiles in home directory ..."
 	if [ -f ~/.$file ]; then
 		echo "Found"
-		echo "Moving $file from ~ to $OLDDIR"
-		mv ~/.$file $OLDDIR
+		echo "Moving $filename from $HOME to $OLDDIR"
+		mv $HOME/.$filename $OLDDIR
 	else
 		echo "Not Found"
 	fi
 
 	# Create new symlinks
-	echo "Creating symlink to $file in home directory"
-	ln -s $DOTDIR/$file ~/.$file
+	echo "Creating symlink to $filename in home directory"
+	ln -s $DOTDIR/$filename ~/.$filename
 
 	echo ""
 done
