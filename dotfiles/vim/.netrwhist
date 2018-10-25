@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/etc/modprobe.d'
-let g:netrw_dirhist_2='/home/kai/.vim/bundle/vim-airline/plugin'
-let g:netrw_dirhist_3='/home/kai/.local'
-let g:netrw_dirhist_4='/home/kai/src/ruby/paranoia/lib/paranoia'
-let g:netrw_dirhist_5='/home/kai/src/cvwo/Assignments/Kiang_Teng/cvwo3_web/src/app/directives'
-let g:netrw_dirhist_6='/home/kai/.config'
-let g:netrw_dirhist_7='/home/kai/bin/dotfiles'
