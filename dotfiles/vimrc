@@ -32,6 +32,8 @@ set autoindent					" Auto-indent
 autocmd Filetype ocaml setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd Filetype c setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 autocmd Filetype ruby setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+autocmd Filetype solidity setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+autocmd Filetype conf setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 " }}}
 
 " UI Layout {{{
