@@ -3,6 +3,7 @@
 set nocompatible	" Workaround for keyboard incompatibility (Set first)
 set showcmd
 set mouse=a			" Enable use of mouse
+map <C-c> "+y<CR>
 
 " Leader {{{
 let mapleader = ","
