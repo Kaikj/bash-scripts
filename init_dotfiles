@@ -12,36 +12,36 @@
 
 # Get directory of the script
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-DOTDIR=$DIR/dotfiles					# Dotfiles directory
-OLDDIR=$HOME/dotfiles_old					# Old dotfiles backup directory
-FILES=$DOTDIR/*							# Get list of files in dotfile directory
+DOTDIR=$DIR/dotfiles          # Dotfiles directory
+OLDDIR=$HOME/dotfiles_old     # Old dotfiles backup directory
+FILES=$DOTDIR/*               # Get list of files in dotfile directory
 
 ##############
 
 # Create old dotfiles directory in home directory
 if [ ! -d "$OLDDIR" ]; then
-	echo -n "Creating $OLDDIR for backup of any existing dotfiles in ~ ..."
-	mkdir $OLDDIR
-	echo "done"
-	echo ""
+  echo -n "Creating $OLDDIR for backup of any existing dotfiles in ~ ..."
+  mkdir $OLDDIR
+  echo "done"
+  echo ""
 fi
 
 for file in $FILES; do
-	filename=$(basename $file)
+  filename=$(basename $file)
 
-	# Move old files to old directory
-	echo -n "Finding any existing dotfiles in home directory ..."
-	if [ -f $HOME/filename ]; then
-		echo "Found"
-		echo "Moving $filename from $HOME to $OLDDIR"
-		mv $HOME/.$filename $OLDDIR
-	else
-		echo "Not Found"
-	fi
+  # Move old files to old directory
+  echo -n "Finding any existing dotfiles in home directory ..."
+  if [ -f $HOME/filename ]; then
+    echo "Found"
+    echo "Moving $filename from $HOME to $OLDDIR"
+    mv $HOME/.$filename $OLDDIR
+  else
+    echo "Not Found"
+  fi
 
-	# Create new symlinks
-	echo "Creating symlink to $filename in home directory"
-	ln -s $DOTDIR/$filename ~/.$filename
+  # Create new symlinks
+  echo "Creating symlink to $filename in home directory"
+  ln -s $DOTDIR/$filename ~/.$filename
 
-	echo ""
+  echo ""
 done
