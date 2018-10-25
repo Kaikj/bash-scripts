@@ -11,26 +11,37 @@ These scripts are written to automate any repetitive tasks that I may have as we
 
 ### Installation
 
-If `git` is not installed yet, download the zipfile from the sidebar.
+If `git` is not installed yet, download the repository manually. There is a setup script which can be used for setting up git
 
-If it is, for version 1.9 and above, just run:
+For `git` version 2.1.3 and later, use `--recurse-submodules` instead
 
 ```bash
-  git clone --recursive git@github.com:Kaikj/bash-scripts.git ~/bin
+  git clone --recurse-submodules -j8 git@github.com:Kaikj/bash-scripts.git ~/scripts
 ```
 
-Otherwise, run:
+For `git` version 1.9 till 2.1.2:
 
 ```bash
-  git clone git@github.com:Kaikj/bash-scripts.git ~/bin
+  git clone --recursive -j8 git@github.com:Kaikj/bash-scripts.git ~/scripts
 ```
-  
-After cloning the repositories, you can proceed into the directory to pull all submodules and execute any of the scripts:
+
+For `git` version 1.6.5 and later:
 
 ```bash
-  cd ~/bin
+  git clone --recursive git@github.com:Kaikj/bash-scripts.git ~/scripts
+```
+
+For already cloned repositories or older versions of `git`:
+
+```bash
+  git clone git@github.com:Kaikj/bash-scripts.git ~/scripts
+  cd ~/scripts
   git submodule update --init --recursive
 ```
+
+### Running the scripts
+
+After cloning the repositories, any of the scripts can be executed directly
 
 Alternatively, you can add the path into the global variable path and be able to run the scripts from anywhere
 
