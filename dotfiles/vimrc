@@ -1,8 +1,8 @@
 " For cool stuffs
 
-set nocompatible	" Workaround for keyboard incompatibility (Set first)
+set nocompatible    " Workaround for keyboard incompatibility (Set first)
 set showcmd
-set mouse=a			" Enable use of mouse
+set mouse=a         " Enable use of mouse
 map <C-c> "+y<CR>
 
 " Leader {{{
@@ -20,16 +20,16 @@ set encoding=utf-8
 " }}}
 
 " Colours {{{
-syntax enable		" Enable syntax processing
+syntax enable       " Enable syntax processing
 set t_Co=256
 " }}}
 
 " Spaces and Tabs {{{
-set tabstop=4					" Number of visual spaces per TAB
-set softtabstop=4				" Number of spaces in tab when editing
-set listchars:tab:»·,trail:·	" Configuration for tab and trailing
-set list						" Show hidden chars
-set autoindent					" Auto-indent
+set tabstop=4                 " Number of visual spaces per TAB
+set softtabstop=4             " Number of spaces in tab when editing
+set listchars:tab:»·,trail:·  " Configuration for tab and trailing
+set list                      " Show hidden chars
+set autoindent                " Auto-indent
 autocmd Filetype ocaml setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd Filetype c setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 autocmd Filetype ruby setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
@@ -40,15 +40,15 @@ autocmd Filetype conf setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 " }}}
 
 " UI Layout {{{
-set number			" Set numberings at side
-set relativenumber	" Set relative numbers
+set number          " Set numberings at side
+set relativenumber  " Set relative numbers
 augroup relativenumbertoggle
   autocmd!
   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
-set cursorline		" Highlight current line
-set showmatch		" Highlight matching [{()}]
+set cursorline    " Highlight current line
+set showmatch     " Highlight matching [{()}]
 " }}}
 
 " Split Screen {{{
@@ -65,8 +65,8 @@ nnoremap <leader>j   :rightbelow new<CR>
 "}}}
 
 " Searching  {{{
-set incsearch		" search as characters are entered
-set hlsearch		" highlight matches
+set incsearch   " search as characters are entered
+set hlsearch    " highlight matches
 " Switch off highlighting of the current search results
 nnoremap <CR> :nohlsearch<CR><CR>
 " }}}
