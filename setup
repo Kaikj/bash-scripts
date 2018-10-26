@@ -11,12 +11,6 @@ cd ~
 sudo apt-get update
 echo 'Update successful'
 
-# Set external environment file
-echo 'if [ -f ~/.bash_env ]; then' >> ~/.bashrc
-echo '    . ~/.bash_env' >> ~/.bashrc
-echo 'fi' >> ~/.bashrc
-touch ~/bin/.bash_env
-
 # Get vim
 sudo apt-get install vim
 
