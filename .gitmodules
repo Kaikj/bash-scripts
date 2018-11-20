@@ -34,3 +34,6 @@
 [submodule "dotfiles/vim/bundle/vim-solidity"]
 	path = dotfiles/vim/bundle/vim-solidity
 	url = https://github.com/tomlion/vim-solidity.git
+[submodule "plugin/powerline-fonts"]
+	path = plugin/powerline-fonts
+	url = git@github.com:powerline/fonts.git
