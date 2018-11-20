@@ -34,8 +34,7 @@ git config --global user.name $username
 git config --global user.email $email
 
 # Set user defined bin folder
-mkdir ~/bin
-echo 'export PATH="~/bin:$PATH"' >> ~/bin/.bash_env
+mkdir -p ~/bin
 
 # Key generation
 if [ ! -d ~/.ssh ]
