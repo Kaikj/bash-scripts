@@ -29,6 +29,7 @@ fi
 
 # Configure git
 sudo apt-get install git-core
+sudo apt-get install tig
 git config --global color.ui true
 git config --global user.name $username
 git config --global user.email $email
