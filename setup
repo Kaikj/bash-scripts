@@ -24,7 +24,7 @@ sudo apt-get install vim
 
 if [ ! -f ~/.vimrc ]
 then
-	touch ~/.vimrc
+  touch ~/.vimrc
 fi
 
 # Configure git
@@ -40,7 +40,7 @@ mkdir -p ~/bin
 # Key generation
 if [ ! -f ~/.ssh/id_rsa ]
 then
-	ssh-keygen -t rsa -C $email
+  ssh-keygen -t rsa -C $email
 fi
 
 echo 'Please paste the following at this link: https://github.com/settings/ssh'
