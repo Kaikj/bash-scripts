@@ -43,9 +43,8 @@ echo 'Hi $username! You\'ve successfully authenticated, but GitHub does not prov
 
 echo '. ~/.bashrc'
 
-gconftool-2 -t str -s /apps/gnome-terminal/keybindings/copy "<Control>c"
-gconftool-2 -t str -s /apps/gnome-terminal/keybindings/paste "<Control>v"
-
 sudo apt-get update
 sudo apt install python3-dev python3-pip
 sudo pip3 install thefuck
+
+dconf load /org/gnome/terminal < ./config/org.gnome.terminal.conf
