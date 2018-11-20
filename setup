@@ -5,6 +5,14 @@
 
 username=$1
 email=$2
+
+if [ $# -ne 2 ]
+then
+	echo 'Insufficient arguments supplied'
+	echo './setup <git-username> <email>'
+	exit 1
+fi
+
 cd ~
 
 # Update
