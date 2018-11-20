@@ -38,10 +38,11 @@ git config --global user.email $email
 mkdir -p ~/bin
 
 # Key generation
-if [ ! -d ~/.ssh ]
+if [ ! -f ~/.ssh/id_rsa ]
 then
 	ssh-keygen -t rsa -C $email
 fi
+
 echo 'Please paste the following at this link: https://github.com/settings/ssh'
 cat ~/.ssh/id_rsa.pub
 echo -e '\n'
