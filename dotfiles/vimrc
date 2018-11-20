@@ -38,6 +38,7 @@ autocmd Filetype sh setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd Filetype vim setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd Filetype solidity setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd Filetype conf setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
+autocmd Filetype json setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 " }}}
 
 " UI Layout {{{
