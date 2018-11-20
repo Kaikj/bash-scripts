@@ -45,3 +45,8 @@ for file in $FILES; do
 
   echo ""
 done
+
+############
+
+# Load other configuration
+dconf load /org/gnome/terminal/ < $DIR/config/org.gnome.terminal.conf
