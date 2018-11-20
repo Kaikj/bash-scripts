@@ -43,7 +43,7 @@ then
   ssh-keygen -t rsa -C $email
 fi
 
-echo 'Please paste the following at this link: https://github.com/settings/ssh'
+echo 'Please paste the following at this link for setup of github: https://github.com/settings/ssh'
 cat ~/.ssh/id_rsa.pub
 echo -e '\n'
 echo 'Please run ssh -T git@github.com after you have done that'
