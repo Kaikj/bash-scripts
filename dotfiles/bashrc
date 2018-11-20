@@ -137,3 +137,5 @@ export NVM_DIR="/home/kai/.nvm"
 . /home/kai/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
 
 eval $(thefuck --alias)
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
