@@ -13,7 +13,7 @@ then
 	exit 1
 fi
 
-cd ~
+cd $HOME
 
 # Update
 sudo apt-get update
