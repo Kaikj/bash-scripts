@@ -24,7 +24,7 @@ sudo apt-get install vim
 
 if [ ! -f ~/.vimrc ]
 then
-	touch ~/.vimrc	
+	touch ~/.vimrc
 fi
 
 # Configure git
