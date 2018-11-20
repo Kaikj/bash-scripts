@@ -48,7 +48,7 @@ cat ~/.ssh/id_rsa.pub
 echo -e '\n'
 echo 'Please run ssh -T git@github.com after you have done that'
 echo 'You should get a message like this:'
-echo 'Hi $username! You\'ve successfully authenticated, but GitHub does not provide shell access.'
+echo "Hi $username! You've successfully authenticated, but GitHub does not provide shell access."
 
 echo '. ~/.bashrc'
 
