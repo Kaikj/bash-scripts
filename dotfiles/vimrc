@@ -79,7 +79,7 @@ nnoremap <CR> :nohlsearch<CR><CR>
 
 " Airline settings {{{
 set laststatus=2
-let g:airline_theme = 'minimalist'
+let g:airline_theme = 'angr'
 let g:airline_powerline_fonts = 1
 " }}}
 
