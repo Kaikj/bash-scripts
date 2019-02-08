@@ -40,3 +40,6 @@
 [submodule "dotfiles/vim/bundle/vim-lsp"]
 	path = dotfiles/vim/bundle/vim-lsp
 	url = git@github.com:prabirshrestha/vim-lsp.git
+[submodule "dotfiles/vim/bundle/async.vim"]
+	path = dotfiles/vim/bundle/async.vim
+	url = git@github.com:prabirshrestha/async.vim.git
