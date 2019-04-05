@@ -26,6 +26,7 @@ color dracula
 " }}}
 
 " Spaces and Tabs {{{
+set expandtab
 set tabstop=4                 " Number of visual spaces per TAB
 set softtabstop=4             " Number of spaces in tab when editing
 set listchars:tab:»·,trail:·  " Configuration for tab and trailing
