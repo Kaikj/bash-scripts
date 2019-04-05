@@ -43,3 +43,6 @@
 [submodule "dotfiles/vim/bundle/async.vim"]
 	path = dotfiles/vim/bundle/async.vim
 	url = git@github.com:prabirshrestha/async.vim.git
+[submodule "dotfiles/vim/bundle/dracula-theme"]
+	path = dotfiles/vim/bundle/dracula-theme
+	url = git@github.com:dracula/vim.git

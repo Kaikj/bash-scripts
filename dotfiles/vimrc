@@ -21,7 +21,8 @@ set encoding=utf-8
 
 " Colours {{{
 syntax enable       " Enable syntax processing
-set t_Co=256
+" let g:dracula_colorterm = 0
+color dracula
 " }}}
 
 " Spaces and Tabs {{{
