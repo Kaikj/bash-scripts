@@ -21,3 +21,5 @@ alias mouse='function _mouse() {
 };_mouse'
 
 alias :q=exit
+
+alias k='kubectl'
