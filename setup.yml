@@ -1,0 +1,12 @@
+---
+########################################################################################
+# Setup playbook for new machines
+# Usage:
+#   Run ansible-playbook setup.yml --extra-vars "target=<ip address>" --private-key=~/.ssh/<private-key-name>
+#
+########################################################################################
+
+- hosts: '{{ target  }}'
+  roles:
+    - bootstrap
+    - docker
