@@ -1,0 +1,17 @@
+
+###################################################################################
+# Bootstrap host to have python. Ansible can't work otherwise
+- name: Install python
+  become: true
+  raw: test -e /usr/bin/python3 || (apt -y update && apt install -y python3.9)
+####################################################################################
+
+- name: Install basic packages
+  become: true
+  apt:
+    name:
+      - curl
+      - apt-transport-https
+      - git
+    update_cache: yes
+    state: present
