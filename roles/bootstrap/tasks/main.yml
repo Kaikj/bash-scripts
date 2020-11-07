@@ -3,7 +3,7 @@
 # Bootstrap host to have python. Ansible can't work otherwise
 - name: Install python
   become: true
-  raw: test -e /usr/bin/python3 || (apt -y update && apt install -y python3.9)
+  raw: test -e /usr/bin/python3 || (apt -y update && apt install -y python3.9 python3-pip)
 ####################################################################################
 
 - name: Install basic packages
@@ -17,6 +17,10 @@
     update_cache: yes
     state: present
 
+- name: Install python tools
+  pip:
+    name: thefuck
+
 - name: Add Ansible apt repository
   become: true
   apt_repository:
@@ -27,4 +31,4 @@
   apt:
     name: ansible
     update_cache: yes
-  
+
