@@ -22,3 +22,13 @@ This directory contains the various configuration
     ```bash
     dconf load /com/canonical/indicator/ < com.canonical.indicator.conf
     ```
+1. Canonical Indicators
+    To export the settings, run
+    ```bash
+    dconf dump /desktop/ibus/engine/libpinyin/ > desktop.ibus.engine.libpinyin.conf
+    ```
+
+    To import the settings, run
+    ```bash
+    dconf load /desktop/ibus/engine/libpinyin/ < desktop.ibus.engine.libpinyin.conf
+    ```
