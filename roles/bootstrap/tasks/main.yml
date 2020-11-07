@@ -11,7 +11,20 @@
   apt:
     name:
       - curl
+      - software-properties-common
       - apt-transport-https
       - git
     update_cache: yes
     state: present
+
+- name: Add Ansible apt repository
+  become: true
+  apt_repository:
+    repo: ppa:ansible/ansible
+
+- name: Install Ansible
+  become: true
+  apt:
+    name: ansible
+    update_cache: yes
+  
