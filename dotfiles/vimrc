@@ -113,3 +113,7 @@ map <C-n> :Vexplore<CR>
 " Thank you!
 let g:netrw_altv = 1
 " }}}
+
+" The legacy snipmate is still the default so we need to set the version to 1 explictly
+"
+let g:snipMate = { 'snippet_version' : 1 }
